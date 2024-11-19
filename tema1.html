@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacidad de abstracción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            text-align: center;
+            color: #3b82f6;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px;
+            max-width: 800px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .sopa-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        td {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+            border: 1px solid #3b82f6;
+            background-color: #2d2d2d;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        td.marked {
+            background-color: #3b82f6;
+            color: #000;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #bbb;
+            margin-bottom: 40px; /* Espacio extra agregado */
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #3b82f6;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capacidad de abstracción, análisis y síntesis</h1>
+    <p>
+        Esta competencia consiste en descomponer y separar elementos (conceptuales o empíricos) para compararlos, relacionarlos y jerarquizarlos. Luego, esos elementos se recomponen en un nuevo conocimiento o reinterpretación. Es una habilidad fundamental en áreas como la historia y otras disciplinas analíticas.
+    </p>
+    <div class="sopa-container">
+        <h2>Sopa de Letras</h2>
+        <table id="sopa">
+            <!-- Sopa de letras de 12x12 -->
+            <tr>
+                <td>D</td><td>E</td><td>S</td><td>C</td><td>O</td><td>M</td><td>P</td><td>O</td><td>N</td><td>E</td><td>R</td><td>S</td>
+            </tr>
+            <tr>
+                <td>C</td><td>O</td><td>N</td><td>C</td><td>E</td><td>P</td><td>T</td><td>U</td><td>A</td><td>L</td><td>E</td><td>S</td>
+            </tr>
+            <tr>
+                <td>E</td><td>M</td><td>P</td><td>I</td><td>R</td><td>I</td><td>C</td><td>O</td><td>S</td><td>R</td><td>C</td><td>K</td>
+            </tr>
+            <tr>
+                <td>C</td><td>O</td><td>M</td><td>P</td><td>A</td><td>R</td><td>A</td><td>R</td><td>L</td><td>O</td><td>S</td><td>I</td>
+            </tr>
+            <tr>
+                <td>R</td><td>E</td><td>L</td><td>A</td><td>C</td><td>I</td><td>O</td><td>N</td><td>A</td><td>R</td><td>M</td><td>N</td>
+            </tr>
+            <tr>
+                <td>J</td><td>E</td><td>R</td><td>A</td><td>Q</td><td>U</td><td>I</td><td>Z</td><td>A</td><td>R</td><td>G</td><td>U</td>
+            </tr>
+            <tr>
+                <td>E</td><td>L</td><td>E</td><td>M</td><td>E</td><td>N</td><td>T</td><td>O</td><td>S</td><td>C</td><td>R</td><td>E</td>
+            </tr>
+            <tr>
+                <td>C</td><td>O</td><td>N</td><td>O</td><td>C</td><td>I</td><td>M</td><td>I</td><td>E</td><td>N</td><td>T</td><td>O</td>
+            </tr>
+            <tr>
+                <td>R</td><td>E</td><td>I</td><td>N</td><td>T</td><td>E</td><td>R</td><td>P</td><td>R</td><td>E</td><td>S</td><td>P</td>
+            </tr>
+            <tr>
+                <td>H</td><td>I</td><td>S</td><td>T</td><td>O</td><td>R</td><td>I</td><td>A</td><td>L</td><td>E</td><td>M</td><td>P</td>
+            </tr>
+            <tr>
+                <td>C</td><td>O</td><td>D</td><td>I</td><td>G</td><td>O</td><td>A</td><td>N</td><td>A</td><td>L</td><td>I</td><td>S</td>
+            </tr>
+            <tr>
+                <td>J</td><td>E</td><td>E</td><td>P</td><td>A</td><td>L</td><td>E</td><td>R</td><td>P</td><td>M</td><td>C</td><td>D</td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">Busca palabras como: descomponer, conceptual, empiricos, compararlos, relacionar, jerarquizar, elementos, conocimiento, reinterpretar e historia.</div>
+    <button class="back-button" onclick="window.location.href='index.html';">Regresar al índice</button>
+    <script>
+        // Marca las celdas al hacer clic
+        const cells = document.querySelectorAll("td");
+        cells.forEach(cell => {
+            cell.addEventListener("click", () => {
+                cell.classList.toggle("marked");
+            });
+        });
+    </script>
+</body>
+</html>
+
